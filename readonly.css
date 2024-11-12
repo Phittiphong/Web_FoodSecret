@@ -1,0 +1,6 @@
+/* Style for readonly input fields */
+input[readonly] {
+    color: #647585; /* Gray text color */
+    cursor: not-allowed; /* Show a not-allowed cursor to indicate readonly state */
+}
+

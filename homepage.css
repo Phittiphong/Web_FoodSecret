@@ -1,0 +1,47 @@
+/* Ensure that the html and body elements take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Container to hold the main content and push the footer down */
+.container {
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+/* Footer style to stick it at the bottom */
+footer {
+    margin-top: bottom; /* Pushes the footer to the bottom */
+}
+
+/* Hide the dropdown menu by default */
+.dropdown-menu {
+    display: none;
+}
+
+/* Show the dropdown menu when hovering over the dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Style adjustments for better appearance */
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to the toggle button */
+    top: 100%; /* Place it below the toggle button */
+    left: 0; /* Align with the toggle button */
+    margin-top: 0.125rem; /* Small margin between button and dropdown */
+    z-index: 1000; /* Ensure dropdown is above other elements */
+}
+
+.dropdown-menu:hover{
+    display: block;
+}
+
+.dropdown-menu.show {
+    display: block; /* Show dropdown */
+}
+
